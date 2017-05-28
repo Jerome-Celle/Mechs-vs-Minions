@@ -1,0 +1,72 @@
+#plateau {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.terrain {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.terrain#terrain_1{
+  background-image: url("images/terrain_1.png");
+}
+.terrain#terrain_2{
+  background-image: url("images/terrain_2.png");
+}
+
+.minion {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-image: url("images/minion.png");
+}
+
+.minion#minion_1 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+.minion#minion_2 {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+.minion#minion_3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.minion#minion_4 {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.case {
+  /*background-color: black;*/
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -50;
+}

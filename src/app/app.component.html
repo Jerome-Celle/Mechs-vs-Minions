@@ -1,0 +1,13 @@
+<div id="plateau">
+  <div id="terrain_1" class="terrain">
+  </div>
+  <div id="terrain_2" class="terrain">
+  </div>
+</div>
+<div id="grille">
+  <div *ngFor="let minion of minions" (click)="onSelect(minion)" ngStyle=""
+       class="minion" id="minion_{{ minion.id }}"
+       [style.grid-column-start]=minion.posX
+       [style.grid-row-start]=minion.posY>
+  </div>
+</div>
